@@ -20,11 +20,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-    height: 300px;
-    width: 300px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    border-radius: 10%;
+    height: 400px;
+    width: 400px;
+    margin: 2rem 4rem;
+    border-radius: 5%;
 }
 
 .navbar-brand {
@@ -32,5 +31,27 @@
 }
 
 .info {
+    font-family: 'math';
+}
+
+.text-white,
+.about,
+.navbar {
+    font-family: auto;
+}
+
+.btn {
     font-family: 'Roboto';
+}
+
+hr {
+    opacity: 100 !important;
+}
+
+h1 {
+    font-size: 3.5rem !important;
+}
+
+h4 {
+    font-size: 2rem !important;
 }
