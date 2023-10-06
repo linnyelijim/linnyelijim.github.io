@@ -20,8 +20,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
     margin: 0 auto;
     margin-bottom: 30px;
     border-radius: 10%;
@@ -29,4 +29,8 @@
 
 .navbar-brand {
     padding-right: 20%;
+}
+
+.info {
+    font-family: 'Roboto';
 }
