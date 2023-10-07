@@ -66,11 +66,11 @@ h4 {
 }
 
 .bg {
-    background-color: var(--light);
+    background-color: rgb(46, 60, 79, 0.68);
 }
 
 .bg-dark {
-    background-color: var(--dark);
+    background-color: rgb(17 23 32);
 }
 
 .cards {
