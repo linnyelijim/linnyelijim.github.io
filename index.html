@@ -17,536 +17,489 @@
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
-<body>
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block">
-            <div class="container-fluid">
-                <!-- Navbar brand -->
-                <a class="ms-3 col-md-4 navbar-brand nav-link" href="/" aria-current="page">
-                    <strong>Lindsey Jimenez</strong>
-                </a>
-                <div class="col-md-3 collapse navbar-collapse justify-content-center" id="nav-page">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
+<body class data-react-helmet="class">
+    <div id="gatsby">
+        <div id="root">
+            <div class="page">
+                <header class="header">
+                    <!-- Navbar -->
+                    <!-- <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block">
+                        <div class="container-fluid">
+                            <!-- Navbar brand
+                            <a class="ms-3 col-md-4 navbar-brand nav-link" href="/" aria-current="page">
+                                <strong>Lindsey Jimenez</strong>
+                            </a>
+                            <div class="col-md-3 collapse navbar-collapse justify-content-center" id="nav-page">
+                                <ol class="navbar-nav mb-2 mb-lg-0">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#skills">Skills</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="col-md-3 collapse navbar-collapse" id="nav-redirect">
+                                <ul class="navbar-nav ms-auto d-flex flex-row">
+                                    <!-- Icons 
+                                    <li class="social-item me-3 me-lg-0">
+                                        <a class="nav-link" href="https://www.linkedin.com/in/lindseyjimenez2510"
+                                            rel="nofollow" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item me-3 me-lg-0">
+                                        <a class="nav-link" href="https://github.com/linnyelijim" rel="nofollow"
+                                            target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav> -->
+                    <!-- Navbar -->
+                    <!-- Background image -->
+                    <div class="hero">
+                        <div id="intro" class="mtn-image">
+                            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                                <div
+                                    class="container d-flex align-items-center justify-content-center text-center h-100">
+                                    <div class="text-white w-50">
+                                        <h1 class="mb-3">Lindsey Jimenez</h1>
+                                        <h2 class="mb-5">Full Stack Developer</h2>
+                                        <a class="btn btn-outline-light btn-lg m-2" href="../images/LindseyJimenez.pdf"
+                                            role="button" rel="nofollow" target="_blank">View Resume</a>
+                                        <a class="nav-page btn btn-outline-light btn-lg m-2" href="#portfolio"
+                                            role="button">View
+                                            Projects</a>
+                                        <br><br>
+                                        <hr>
+                                        <div class="contact-main">
+                                            <div class="col">
+                                                <div class="col-md-12 d-flex justify-content-center mt-1">
+                                                    <i class="fab fa-github h4"></i>
+                                                    <a class="info text-white h5" href="https://github.com/linnyelijim"
+                                                        rel="nofollow" target="_blank">&ensp;linnyelijim</a>
+                                                </div>
+                                                <div class="col-md-12 d-flex justify-content-center mt-1">
+                                                    <i class="fab fa-linkedin h4"></i>
+                                                    <a class="info text-white h5"
+                                                        href="https://www.linkedin.com/in/lindseyjimenez2510"
+                                                        rel="nofollow" target="_blank">&ensp;lindseyjimenez2510</a>
+                                                </div>
+                                                <div class="col-md-12 d-flex justify-content-center mt-1">
+                                                    <i class="far fa-envelope h4"></i>
+                                                    <a class="info text-white h5"
+                                                        href="mailto:lindseyjimenez@gmail.com">&ensp;lindseyjimenez@gmail.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Background image -->
+                </header>
+                <!--Main Navigation-->
+                <!-- Left Side Nav -->
+                <div orientation="left" class="left-nav">
+                    <ul class="left-nav-list">
+                        <li><a href="#about" aria-label="About">About
+                                <title>About</title>
+                            </a></li>
+                        <li><a href="#skills" aria-label="Skills">Skills
+                                <title>Skills</title>
+                            </a></li>
+                        <li><a href="#portfolio" aria-label="Portfolio">Portfolio
+                                <title>Portfolio</title>
+                            </a></li>
+                        <li><a href="#contact" aria-label="Contact">Contact
+                                <title>Contact</title>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/lindseyjimenez2510" aria-label="Linkedin"
+                                target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                    <title>LinkedIn</title>
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg></a></li>
+                        <li><a href="https://github.com/linnyelijim" aria-label="GitHub" target="_blank"
+                                rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-github">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+
+                                </svg></a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 collapse navbar-collapse" id="nav-redirect">
-                    <ul class="navbar-nav ms-auto d-flex flex-row">
-                        <!-- Icons -->
-                        <li class="social-item me-3 me-lg-0">
-                            <a class="nav-link" href="https://www.linkedin.com/in/lindseyjimenez2510" rel="nofollow"
-                                target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="social-item me-3 me-lg-0">
-                            <a class="nav-link" href="https://github.com/linnyelijim" rel="nofollow" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <!-- Left Side Nav -->
+                <!-- Right Side Nav -->
+                <div orientation="right" class="right-nav">
+                    <div class="right-nav-item fade-enter-done"><a
+                            href="mailto:lindseyjimenez@gmail.com">lindseyjimenez@gmail.com</a></div>
                 </div>
-            </div>
-        </nav>
-        <!-- Navbar -->
-        <!-- Left Side Nav -->
-        <div orientation="left" class="side-nav">
-            <ul class="side-nav-list fade-enter-done">
-                <li><a href="#about" aria-label="About">About
-                        <title>About</title>
-                    </a></li>
-                <li><a href="#skills" aria-label="skills">Skills
-                        <title>Skills</title>
-                    </a></li>
-                <li><a href="#contact" aria-label="contact">Contact
-                        <title>Contact</title>
-                    </a></li>
-                <li><a href="https://www.linkedin.com/in/lindseyjimenez2510" aria-label="Linkedin" target="_blank"
-                        rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-linkedin">
-                            <title>LinkedIn</title>
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                            </path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg></a></li>
-                <li><a href="https://github.com/linnyelijim" aria-label="GitHub" target="_blank" rel="noreferrer"><svg
-                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-github">
-                            <title>GitHub</title>
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
-
-                        </svg></a></li>
-            </ul>
-        </div>
-        <!-- Left Side Nav -->
-        <!-- Right Side Nav -->
-        <div orientation="right" class="right-nav">
-            <div class="right-nav-item fade-enter-done"><a
-                    href="mailto:lindseyjimenez@gmail.com">lindseyjimenez@gmail.com</a></div>
-        </div>
-        <!-- Right Side Nav -->
-        <!-- Background image -->
-        <div id="intro" class="bg-image">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-                <div class="container d-flex align-items-center justify-content-center text-center h-100">
-                    <div class="text-white w-50">
-                        <h1 class="mb-3">Lindsey Jimenez</h1>
-                        <h2 class="mb-5">Full Stack Developer</h2>
-                        <a class="btn btn-outline-light btn-lg m-2" href="../images/LindseyJimenez.pdf" role="button"
-                            rel="nofollow" target="_blank">View Resume</a>
-                        <a class="nav-page btn btn-outline-light btn-lg m-2" href="#portfolio" role="button">View
-                            Projects</a>
-                        <br><br>
-                        <hr>
-                        <div class="contact-main">
-                            <div class="col">
-                                <div class="col-md-12 d-flex justify-content-center mt-1">
-                                    <i class="fab fa-github h4"></i>
-                                    <a class="info text-white h5" href="https://github.com/linnyelijim" rel="nofollow"
-                                        target="_blank">&ensp;linnyelijim</a>
+                <!-- Right Side Nav -->
+                <!--Main layout-->
+                <div id="content">
+                    <main class="main-container main-count">
+                        <!--Section: About-->
+                        <section id="about" class="about-container">
+                            <h2 class="numbered-heading"><strong>About</strong></h2>
+                            <div class="inner">
+                                <div class="bg-image">
+                                    <div class="wrapper">
+                                        <div data-gatsby-image-wrapper=""
+                                            class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
+                                            <picture>
+                                                <img width="500" height="500" data-main-image=""
+                                                    sizes="(min-width: 500px) 500px, 100vw" decoding="async"
+                                                    src="../images/profile.jpg" alt="Headshot"
+                                                    style="object-fit: cover; opacity: 1;">
+                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                                </div>
+                                            </picture><noscript></noscript>
+                                            <!--<img src="../images/profile.jpg" class="img-fluid profile-thumb" alt="headshot" /> -->
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-12 d-flex justify-content-center mt-1">
-                                    <i class="fab fa-linkedin h4"></i>
-                                    <a class="info text-white h5" href="https://www.linkedin.com/in/lindseyjimenez2510"
-                                        rel="nofollow" target="_blank">&ensp;lindseyjimenez2510</a>
+                                <p class="text-muted">
+                                    I'm a recent computer science graduate from Fort Hays State University. I'm
+                                    thrilled to introduce myself as an aspiring computer scientist and tech enthusiast.
+                                    My
+                                    academic journey has equipped me with a solid foundation in computer science,
+                                    including
+                                    proficiency in programming languages like Python, JavaScript, CSS, HTML, and Java,
+                                    as
+                                    well
+                                    as a keen understanding of algorithms and data structures. While I may not have
+                                    hands-on
+                                    industry experience yet, I'm deeply passionate about the possibilities that
+                                    technology
+                                    offers. My goal is to apply my academic knowledge to real-world challenges and
+                                    explore
+                                    innovative solutions in the ever-evolving tech landscape.
+                                    <br><br>
+                                    On this website, you'll find a showcase of my academic projects and the work I've
+                                    undertaken
+                                    during my studies, as well as a few independent projects. As I continue to grow and
+                                    learn in
+                                    this field, I'm excited to collaborate, contribute, and make my mark in the world of
+                                    computer science. Please don't hesitate to connect with me on LinkedIn, explore my
+                                    academic
+                                    journey on GitHub, or reach out via email.
+                                </p>
+                            </div>
+                        </section>
+                        <!--Section: About-->
+                        <!-- Section: Skills -->
+                        <section id="skills" class="skills-container mt-5">
+                            <h2 class="text-center mb-5 numbered-heading">Skills</h2>
+                            <div class="skills row justify-content-center">
+                                <div class="skill-card col-md-6">
+                                    <div class="card text-white bg card h-100 mb-4">
+                                        <div class="card-header text-center bg-dark">Front-End</div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title"><i class="fab fa-html5 mr-2"></i>HTML5</h5>
+                                            <h5 class="card-title"><i class="fab fa-css3-alt mr-2"></i>CSS3 | Bootstrap
+                                            </h5>
+                                            <h5 class="card-title"><i class="fab fa-react mr-2"></i>JavaScript | React
+                                            </h5>
+                                            <!--    <h5 class="card-title"><i class="fas fa-mobile-alt mr-2"></i>Dart | Flutter</h5> -->
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-12 d-flex justify-content-center mt-1">
-                                    <i class="far fa-envelope h4"></i>
-                                    <a class="info text-white h5"
-                                        href="mailto:lindseyjimenez@gmail.com">&ensp;lindseyjimenez@gmail.com</a>
+                                <div class="skill-card col-md-6">
+                                    <div class="card text-white bg card h-100 mb-4">
+                                        <div class="card-header text-center bg-dark">Back-End</div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title"><i class="fab fa-python mr-2"></i>Python | Django
+                                            </h5>
+                                            <h5 class="card-title"><i class="fab fa-node-js mr-2"></i>Node.js | Express
+                                            </h5>
+                                            <h5 class="card-title"><i class="fab fa-java mr-2"></i>Java</h5>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Background image -->
-    </header>
-    <!--Main Navigation-->
-
-    <!--Main layout-->
-    <main class="container main-count">
-        <!--Section: About-->
-        <section id="about" class="about-container">
-            <div class="inner">
-                <div class="bg-image">
-                    <div class="wrapper">
-                        <div data-gatsby-image-wrapper=""
-                            class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
-                            <picture>
-                                <img width="500" height="500" data-main-image="" sizes="(min-width: 500px) 500px, 100vw"
-                                    decoding="async" src="../images/profile.jpg" alt="Headshot"
-                                    style="object-fit: cover; opacity: 1;">
-                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                            </picture><noscript></noscript>
-                            <!--<img src="../images/profile.jpg" class="img-fluid profile-thumb" alt="headshot" /> -->
-                        </div>
-                    </div>
-                </div>
-
-                <h2 class="text-center mb-3 numbered-heading"><strong>About</strong></h2>
-                <p class="text-muted">
-                    I'm a recent computer science graduate from Fort Hays State University. I'm
-                    thrilled to introduce myself as an aspiring computer scientist and tech enthusiast. My
-                    academic journey has equipped me with a solid foundation in computer science, including
-                    proficiency in programming languages like Python, JavaScript, CSS, HTML, and Java, as well
-                    as a keen understanding of algorithms and data structures. While I may not have hands-on
-                    industry experience yet, I'm deeply passionate about the possibilities that technology
-                    offers. My goal is to apply my academic knowledge to real-world challenges and explore
-                    innovative solutions in the ever-evolving tech landscape.
-                    <br><br>
-                    On this website, you'll find a showcase of my academic projects and the work I've undertaken
-                    during my studies, as well as a few independent projects. As I continue to grow and learn in
-                    this field, I'm excited to collaborate, contribute, and make my mark in the world of
-                    computer science. Please don't hesitate to connect with me on LinkedIn, explore my academic
-                    journey on GitHub, or reach out via email.
-                </p>
-            </div>
-        </section>
-        <!--Section: About-->
-        <!-- Section: Skills -->
-        <section id="skills" class="container mt-5" data-aos="fade-in">
-            <h2 class="text-center mb-5 numbered-heading">Skills</h2>
-            <div class="skills row justify-content-center">
-                <div class="skill-card col-md-6">
-                    <div class="card text-white bg card h-100 mb-4">
-                        <div class="card-header text-center bg-dark">Front-End</div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><i class="fab fa-html5 mr-2"></i>HTML5</h5>
-                            <h5 class="card-title"><i class="fab fa-css3-alt mr-2"></i>CSS3 | Bootstrap</h5>
-                            <h5 class="card-title"><i class="fab fa-react mr-2"></i>JavaScript | React</h5>
-                            <!--    <h5 class="card-title"><i class="fas fa-mobile-alt mr-2"></i>Dart | Flutter</h5> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-card col-md-6">
-                    <div class="card text-white bg card h-100 mb-4">
-                        <div class="card-header text-center bg-dark">Back-End</div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><i class="fab fa-python mr-2"></i>Python | Django</h5>
-                            <h5 class="card-title"><i class="fab fa-node-js mr-2"></i>Node.js | Express</h5>
-                            <h5 class="card-title"><i class="fab fa-java mr-2"></i>Java</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills row justify-content-center">
-                <div class="skill-card col-md-6">
-                    <div class="card text-white bg card h-100 mb-4">
-                        <div class="card-header text-center bg-dark">Databases | Deployment</div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><i class="fab fa-deskpro mr-2"></i>PostgreSQL | MySQL</h5>
-                            <h5 class="card-title"><i class="fas fa-database mr-2"></i>MongoDB | MariaDB</h5>
-                            <h5 class="card-title"><i class="fas fa-rocket mr-2"></i>Heroku | Netlify | GitHub Pages
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-card col-md-6">
-                    <div class="card text-white bg card h-100 mb-4">
-                        <div class="card-header text-center bg-dark">Technologies</div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><i class="fab fa-github mr-2"></i>Git | GitHub</h5>
-                            <h5 class="card-title"><i class="fas fa-laptop-code mr-2"></i>VSCode</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Section: Skills-->
-        <!--Section: Portfolio-->
-        <section id="portfolio">
-            <h2 class="text-center mb-5 numbered-heading">Projects</h2>
-            <ul class="projects">
-                <li class="projects-li" data-sr-id="4"
-                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;">
-                    <div class="project-content">
-                        <div>
-                            <h3 class="project-title"><a href="#!" rel="noopener noreferrer"
-                                    target="_blank">Bookshelf</a></h3>
-                            <div class="project-description">
-                                <p>A personal bookshelf that uses MVC framework and OpenLibrary's api to retrieve
-                                    and organize my to-be-read, currently reading, and finished titles.</p>
+                            <div class="skills row justify-content-center">
+                                <div class="skill-card col-md-6">
+                                    <div class="card text-white bg card h-100 mb-4">
+                                        <div class="card-header text-center bg-dark">Databases | Deployment</div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title"><i class="fab fa-deskpro mr-2"></i>PostgreSQL | MySQL
+                                            </h5>
+                                            <h5 class="card-title"><i class="fas fa-database mr-2"></i>MongoDB | MariaDB
+                                            </h5>
+                                            <h5 class="card-title"><i class="fas fa-rocket mr-2"></i>Heroku | Netlify |
+                                                GitHub
+                                                Pages
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-card col-md-6">
+                                    <div class="card text-white bg card h-100 mb-4">
+                                        <div class="card-header text-center bg-dark">Technologies</div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title"><i class="fab fa-github mr-2"></i>Git | GitHub</h5>
+                                            <h5 class="card-title"><i class="fas fa-laptop-code mr-2"></i>VSCode</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <ul class="project-tech-list">
-                                <li>VS Code</li>
-                                <li>Node.js</li>
-                                <li>Express</li>
-                                <li>OpenLibrary</li>
-                                <li>---host---</li>
+                        </section>
+                        <!--Section: Skills-->
+                        <!--Section: Portfolio-->
+                        <section id="portfolio">
+                            <h2 class="text-center mb-5 numbered-heading">Projects</h2>
+                            <ul class="projects">
+                                <li class="projects-li" data-sr-id="4"
+                                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;">
+                                    <div class="project-content">
+                                        <div>
+                                            <h3 class="project-title">
+                                                <a href="#!" rel="noopener noreferrer" target="_blank">Bookshelf</a>
+                                            </h3>
+                                            <div class="project-description">
+                                                <p>A personal bookshelf that uses MVC framework and OpenLibrary's api to
+                                                    retrieve
+                                                    and organize my to-be-read, currently reading, and finished titles.
+                                                </p>
+                                            </div>
+                                            <ul class="project-tech-list">
+                                                <li>VS Code</li>
+                                                <li>Node.js</li>
+                                                <li>Express</li>
+                                                <li>OpenLibrary</li>
+                                                <li>---host---</li>
+                                            </ul>
+                                            <div class="project-links">
+                                                <a href="https://github.com/linnyelijim/bookshelf"
+                                                    aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-github">
+                                                        <title>GitHub</title>
+                                                        <path
+                                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                                <a href="#!" aria-label="External Link" class="external"
+                                                    rel="noopener noreferrer" target="_blank">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-external-link">
+                                                        <title>External Link</title>
+                                                        <path
+                                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                        </path>
+                                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-image">
+                                        <a href="#!" rel="noopener noreferrer" target="_blank">
+                                            <div data-gatsby-image-wrapper=""
+                                                class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
+                                                <div style="max-width: 700px; display: block;"></div>
+                                                <picture>
+                                                    <img width="700" height="438" data-main-image=""
+                                                        sizes="(min-width: 700px) 700px, 100vw" decoding="async"
+                                                        src="images/bookshelf1.png" alt="Bookshelf"
+                                                        style="object-fit: cover; opacity: 1;">
+                                                </picture><noscript></noscript>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="projects-li" data-sr-id="5"
+                                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;">
+                                    <div class="project-content">
+                                        <div>
+                                            <h3 class="project-title"><a href="#!" rel="noopener noreferrer"
+                                                    target="_blank">DigiDiner</a></h3>
+                                            <div class="project-description">
+                                                <p>A digital dinning application that uses MVC framework to create a
+                                                    service
+                                                    industry application that handles various aspects withing the
+                                                    seating,
+                                                    ordering,
+                                                    and payment process.</p>
+                                            </div>
+                                            <ul class="project-tech-list">
+                                                <li>VS Code</li>
+                                                <li>Node.js</li>
+                                                <li>Express</li>
+                                                <li>jQuery</li>
+                                                <li>MariaDB</li>
+                                                <li>LightSail</li>
+                                            </ul>
+                                            <div class="project-links">
+                                                <a href="https://github.com/digidiner/DigiDiner"
+                                                    aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-github">
+                                                        <title>GitHub</title>
+                                                        <path
+                                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                                <a href="#!" aria-label="External Link" class="external"
+                                                    rel="noopener noreferrer" target="_blank">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-external-link">
+                                                        <title>External Link</title>
+                                                        <path
+                                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                        </path>
+                                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-image"><a href="#!" rel="noopener noreferrer" target="_blank">
+                                            <div data-gatsby-image-wrapper=""
+                                                class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
+                                                <div style="max-width: 700px; display: block;"></div>
+                                                <picture>
+                                                    <img width="700" height="438" data-main-image=""
+                                                        sizes="(min-width: 700px) 700px, 100vw" decoding="async"
+                                                        src="../images/logo.png" alt="DigiDiner Application"
+                                                        style="object-fit: cover; opacity: 1;">
+                                                </picture><noscript></noscript>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="projects-li" data-sr-id="6"
+                                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;">
+                                    <div class="project-content">
+                                        <div>
+                                            <h3 class="project-title"><a
+                                                    href="https://ljimenez2.infprojects.fhsu.edu/Lead%20Me%20Outdoors%20-Jimenez/index.html"
+                                                    rel="noopener noreferrer" target="_blank">Lead Me
+                                                    Outdoors</a></h3>
+                                            <div class="project-description">
+                                                <p>First independent school project requiring the creation of a template
+                                                    site illustrating integration and use of Bootstrap components. Lead
+                                                    Me
+                                                    Outdoors,
+                                                    in itself, could be used to recommend hikes to users base on
+                                                    location,
+                                                    athletic
+                                                    ability, and preference.</p>
+                                            </div>
+                                            <ul class="project-tech-list">
+                                                <li>HTML/ CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>Bootstrap</li>
+                                                <li>cPanel</li>
+                                            </ul>
+                                            <div class="project-links">
+                                                <a href="https://ljimenez2.infprojects.fhsu.edu/Lead%20Me%20Outdoors%20-Jimenez/index.html"
+                                                    aria-label="External Link" class="external"
+                                                    rel="noopener noreferrer" target="_blank">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-external-link">
+                                                        <title>External Link</title>
+                                                        <path
+                                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                        </path>
+                                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                    </svg>
+                                                </a>
+                                                <a href="https://ljimenez2.infprojects.fhsu.edu/"
+                                                    aria-label="Course Link" class="cta" rel="noopener noreferrer"
+                                                    target="_blank">More School
+                                                    Projects
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-image">
+                                        <a href="https://ljimenez2.infprojects.fhsu.edu/Lead%20Me%20Outdoors%20-Jimenez/index.html"
+                                            rel="noopener noreferrer" target="_blank">
+                                            <div data-gatsby-image-wrapper=""
+                                                class="gatsby-image-wrapper gatsby-image-wrapper-constrained img ">
+                                                <div style="max-width: 700px; display: block;"></div>
+                                                <picture>
+                                                    <img width="700" height="394" data-main-image=""
+                                                        sizes="(min-width: 700px) 700px, 100vw" decoding="async"
+                                                        src="/images/beebs.jpg" alt="Build a Spotify Connected App"
+                                                        style="object-fit: cover; opacity: 1;">
+                                                </picture><noscript></noscript>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
                             </ul>
-                            <div class="project-links"><a href="https://github.com/linnyelijim/bookshelf"
-                                    aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg
-                                        xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="feather feather-github">
-                                        <title>GitHub</title>
-                                        <path
-                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                        </path>
-                                    </svg></a><a href="#!" aria-label="External Link" class="external"
-                                    rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-                                        role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-external-link">
-                                        <title>External Link</title>
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></a></div>
-                        </div>
-                    </div>
-                    <div class="project-image">
-                        <a href="#!" rel="noopener noreferrer" target="_blank">
-                            <div data-gatsby-image-wrapper=""
-                                class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
-                                <div style="max-width: 700px; display: block;"></div>
-                                <picture>
-                                    <img width="700" height="438" data-main-image=""
-                                        sizes="(min-width: 700px) 700px, 100vw" decoding="async"
-                                        src="images/bookshelf1.png" alt="Bookshelf"
-                                        style="object-fit: cover; opacity: 1;">
-                                </picture><noscript></noscript>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li class="projects-li" data-sr-id="5"
-                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;">
-                    <div class="project-content">
-                        <div>
-                            <h3 class="project-title"><a href="#!" rel="noopener noreferrer"
-                                    target="_blank">DigiDiner</a></h3>
-                            <div class="project-description">
-                                <p>A digital dinning application that uses MVC framework to create a service
-                                    industry application that handles various aspects withing the seating, ordering,
-                                    and payment process.</p>
-                            </div>
-                            <ul class="project-tech-list">
-                                <li>VS Code</li>
-                                <li>Node.js</li>
-                                <li>Express</li>
-                                <li>jQuery</li>
-                                <li>MariaDB</li>
-                                <li>LightSail</li>
-                            </ul>
-                            <div class="project-links"><a href="https://github.com/digidiner/DigiDiner"
-                                    aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg
-                                        xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="feather feather-github">
-                                        <title>GitHub</title>
-                                        <path
-                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                        </path>
-                                    </svg></a><a href="#!" aria-label="External Link" class="external"
-                                    rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-                                        role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-external-link">
-                                        <title>External Link</title>
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></a></div>
-                        </div>
-                    </div>
-                    <div class="project-image"><a href="#!" rel="noopener noreferrer" target="_blank">
-                            <div data-gatsby-image-wrapper=""
-                                class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
-                                <div style="max-width: 700px; display: block;"></div>
-                                <picture>
-                                    <img width="700" height="438" data-main-image=""
-                                        sizes="(min-width: 700px) 700px, 100vw" decoding="async"
-                                        src="../images/logo.png" alt="DigiDiner Application"
-                                        style="object-fit: cover; opacity: 1;">
-                                </picture><noscript></noscript>
-                            </div>
-                        </a></div>
-                </li>
-                <li class="projects-li" data-sr-id="6"
-                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;">
-                    <div class="project-content">
-                        <div>
-                            <h3 class="project-title"><a
-                                    href="https://ljimenez2.infprojects.fhsu.edu/Lead%20Me%20Outdoors%20-Jimenez/index.html"
-                                    rel="noopener noreferrer" target="_blank">Lead Me
-                                    Outdoors</a></h3>
-                            <div class="project-description">
-                                <p>First independent school project requiring the creation of a template
-                                    site illustrating integration and use of Bootstrap components. Lead Me Outdoors,
-                                    in itself, could be used to recommend hikes to users base on location, athletic
-                                    ability, and preference.</p>
-                            </div>
-                            <ul class="project-tech-list">
-                                <li>HTML/ CSS</li>
-                                <li>JavaScript</li>
-                                <li>Bootstrap</li>
-                                <li>cPanel</li>
-                            </ul>
-                            <div class="project-links"><a
-                                    href="https://ljimenez2.infprojects.fhsu.edu/Lead%20Me%20Outdoors%20-Jimenez/index.html"
-                                    aria-label="External Link" class="external" rel="noopener noreferrer"
-                                    target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-external-link">
-                                        <title>External Link</title>
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></a><a href="https://ljimenez2.infprojects.fhsu.edu/" aria-label="Course Link"
-                                    class="cta" rel="noopener noreferrer" target="_blank">More School Projects</a></div>
-                        </div>
-                    </div>
-                    <div class="project-image"><a
-                            href="https://ljimenez2.infprojects.fhsu.edu/Lead%20Me%20Outdoors%20-Jimenez/index.html"
-                            rel="noopener noreferrer" target="_blank">
-                            <div data-gatsby-image-wrapper=""
-                                class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
-                                <div style="max-width: 700px; display: block;"></div>
-                                <picture>
-                                    <img width="700" height="394" data-main-image=""
-                                        sizes="(min-width: 700px) 700px, 100vw" decoding="async" src="/images/beebs.jpg"
-                                        alt="Build a Spotify Connected App" style="object-fit: cover; opacity: 1;">
-                                </picture><noscript></noscript>
-                            </div>
-                        </a></div>
-                </li>
-            </ul>
+                        </section>
+                        <!--Section: Portfolio-->
+                        <!--Section: Contact-->
+                        <section id="contact" class="contact-me" data-sr-id="15"
+                            style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;">
+                            <h2 class="numbered-heading overline">What’s Next?</h2>
+                            <h2 class="title">Get In Touch</h2>
+                            <p>Although I’m not currently looking for any new opportunities, my inbox is always open.
+                                Whether
+                                you
+                                have a question or just want to say hi, I’ll try my best to get back to you!</p>
+                            <a class="email-link" href="mailto:lindseyjimenez@gmail.com" rel="noopener noreferrer"
+                                target="_blank">Say
+                                Hello</a>
+                        </section>
+                        <!--Section: Contact-->
+                    </main>
+                    <!--Main layout-->
 
-            <!--Bookshelf
-                    <div class="col-lg-4 col-md-12 mb-4">
-                        <div class="project-card card">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                <img src="../images/bookshelf1.png" class="img-fluid" />
-                                <div class="mask">
-                                    <div class="card-container card-body">
-                                        <h5 class="project-title card-title">Bookshelf</h5>
-                                        <button class="btn btn-primary" data-mdb-toggle="modal"
-                                            data-mdb-target="#bookshelf-modal">Details</button>
-                                    </div>
-                                </div>
-                            </div>
+                    <!--Footer-->
+                    <footer class="text-lg-start footer">
+                        <!-- Copyright -->
+                        <div class="text-center p-3">
+                            © 2023 Copyright: Lindsey Jimenez
                         </div>
-                        <div class="modal fade" id="bookshelf-modal" tabindex="-1" role="dialog"
-                            aria-labelledby="BookshelfModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="BookshelfModalLabel">Bookshelf</h5>
-                                        <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p class="card-text">
-                                            A personal bookshelf that uses MVC framework and OpenLibrary's api and
-                                            database.
-                                        </p>
-                                        <a href="https://www.lindseyjimenez.github.io/Bookshelf"
-                                            class="btn btn-lg btn-rounded">Website</a>
-                                        <button class="btn btn-lg btn-rounded">Code</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    Bookshelf-->
-            <!--DigiDiner
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="project-card card">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                <img src="../images/logo.png" class="img-fluid" />
-                                <div class="mask" style="background-color: rgba(234, 234, 234, 0.498);">
-                                    <div class="card-container card-body">
-                                        <h5 class="project-title card-title">DigiDiner</h5>
-                                        <button class="btn btn-primary" data-mdb-toggle="modal"
-                                            data-mdb-target="#digidiner-modal">Details</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="digidiner-modal" tabindex="-1" role="dialog"
-                        aria-labelledby="DigiDinerModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="DigiDinerModalLabel">DigiDiner</h5>
-                                    <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p class="card-text">
-                                        A digital dinning application that uses MVC framework, MariaDB, and
-                                        lightsail.
-                                    </p>
-                                    <a href="digidiner.net" class="btn btn-lg btn-rounded">Website</a>
-                                    <button class="btn btn-lg btn-rounded">Code</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    DigiDiner-->
-            <!-- Lead Me Outdoors
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="project-card card">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                <img src="../images/beebs.jpg" class="LMO-img img-fluid" />
-                                <div class="mask" style="background-color: rgba(234, 234, 234, 0.498);">
-                                    <div class="card-container card-body">
-                                        <h5 class="project-title card-title">Lead Me Outdoors</h5>
-                                        <button class="btn btn-primary" data-mdb-toggle="modal"
-                                            data-mdb-target="#LMO-modal">Details</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="LMO-modal" tabindex="-1" role="dialog" aria-labelledby="LMOModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="LMOModalLabel">Lead Me Outdoors</h5>
-                                    <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p class="card-text">
-                                        School project that uses HTML, CSS, and JavaScript to create a template
-                                        site that would recommend hikes to users base on location, athletic ability,
-                                        and preference.
-                                    </p>
-                                    <a href="https://ljimenez2.infprojects.fhsu.edu/Lead%20Me%20Outdoors%20-Jimenez/index.html"
-                                        class="btn btn-lg btn-rounded">Website</a>
-                                    <button class="btn btn-lg btn-rounded">Code</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    Lead Me Outdoors -->
-
-        </section>
-        <!--Section: Portfolio-->
-        <!--Section: Contact-->
-        <section id="contact" class="fMdyDu" data-sr-id="15"
-            style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;">
-            <h2 class="numbered-heading overline">What’s Next?</h2>
-            <h2 class="title">Get In Touch</h2>
-            <p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you
-                have a question or just want to say hi, I’ll try my best to get back to you!</p><a class="email-link"
-                href="mailto:lindseyjimenez@gmail.com" rel="noopener noreferrer" target="_blank">Say Hello</a>
-        </section>
-        <!--Section: Contact-->
-        </div>
-    </main>
-    <!--Main layout-->
-
-    <!--Footer-->
-    <footer class="bg-light text-lg-start footer">
-        <div class="container">
-            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-                <div class="col-lg-3 mx-auto mt-5">
-                    <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
-                    <hr class="hr-light my-4" />
-                    <h6><i class="far fa-envelope mr-2"></i>lindseyjimenez@gmail.com</h6>
-                    <h6><i class="fas fa-phone mr-2"></i>(573) 301-6216</h6>
+                        <!-- Copyright -->
+                    </footer>
                 </div>
             </div>
         </div>
-
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright: Lindsey Jimenez
-        </div>
-        <!-- Copyright -->
-    </footer>
+    </div>
     <!--Footer-->
     <!-- MDB -->
     <script type="text/javascript" src="../js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="../js/script.js"></script>
+</body>
 
 </html>
