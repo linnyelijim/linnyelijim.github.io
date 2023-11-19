@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <!-- MDB -->
     <link rel="stylesheet" href="../css/mdb.min.css" />
+    <!--Animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <!-- Custom styles -->
     <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -22,14 +24,18 @@
     <header class="mtn-image img-fluid">
         <div class="mask">
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark py-3">
-                <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark py-2">
+                <div class="container-fluid">
                     <!-- Navbar brand-->
-                    <a class="mx-3 row-cols-1 navbar-brand nav-link" href="/" aria-current="page">
+                    <a class="navbar-brand" href="/" aria-current="page">
                         <img src="images/brand.png" class="img-fluid brand" alt="brand">
                     </a>
-                    <div class="col-md-4 d-flex" id="nav-page">
-                        <ol class="navbar-nav">
+                    <button class="navbar-toggler collapsed" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+                    </button>
+                    <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse">
+                        <ol class="navbar-nav ml-auto smooth-scroll align-items-end">
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#about">About</a>
                             </li>
@@ -43,190 +49,201 @@
                                 <a class="nav-link text-white" href="#contact">Contact</a>
                             </li>
                         </ol>
-                        <div id="nav-redirect">
-                            <ul class="navbar-nav ms-3 mt-0 d-flex flex-row">
-                                <!-- Icons -->
-                                <li class="social-item nav-item me-3 me-lg-0">
-                                    <a class="nav-link text-white" href="https://www.linkedin.com/in/lindseyjimenez2510"
-                                        rel="nofollow" target="_blank">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li class="social-item nav-item me-3 me-lg-0">
-                                    <a class="nav-link text-white" href="https://github.com/linnyelijim" rel="nofollow"
-                                        target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="flex-row navbar-nav ml-auto mt-0 smooth-scroll justify-content-end">
+                            <li class="social-item nav-item me-3 me-lg-0">
+                                <a class="nav-link text-white" href="https://www.linkedin.com/in/lindseyjimenez2510"
+                                    rel="nofollow" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="social-item nav-item me-3 me-lg-0">
+                                <a class="nav-link text-white" href="https://github.com/linnyelijim" rel="nofollow"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+
                     </div>
             </nav>
             <!-- Navbar -->
             <div class="aos-init aos-animate">
-                <div id="intro" class="container my-5">
-                    <div class="d-flex justify-content-center flex-column">
-                        <h5 class="mb-2 row-cols-1 nav-greeting mt-4">Hi, my name is</h5>
-                        <h1 class="mb-2 row-cols-1 text-white">Lindsey Jimenez.</h1>
-                        <h2 class="mb-5 row-cols-1">I'm a Full Stack Developer.</h2>
-                        <div class="row-cols-2">
-                            <a class="col-2 btn btn-lg m-2" href="../images/LindseyJimenez.pdf" role="button"
-                                rel="nofollow" target="_blank">View Resume</a>
-                            <a class="col-2 nav-page btn btn-lg m-2" href="#portfolio" role="button">View
-                                Projects</a>
-                        </div>
-                        <br>
-                        <div class="contact-main row mt-3">
-                            <div class="col-md-12 d-flex mt-1">
-                                <a class="info github nav-item" href="https://github.com/linnyelijim" rel="nofollow"
-                                    target="_blank" aria-label="linnyelijim">
-                                    <i class="fab fa-github h1 mx-2"></i>
-                                </a>
-                                <a class="info linkedin nav-item" href="https://www.linkedin.com/in/lindseyjimenez2510"
-                                    rel="nofollow" target="_blank" aria-label="lindseyjimenez2510">
-                                    <i class="fab fa-linkedin h1 mx-2"></i>
-                                </a>
-                                <a class="info email nav-item" href="mailto:lindseyjimenez@gmail.com"
-                                    aria-label="lindseyjimenez@gmail.com">
-                                    <i class="far fa-envelope h1 mx-2"></i>
-                                </a>
+                <div class="ms-auto">
+                    <div id="intro" class="container my-3">
+                        <div class="row mt-5 mb-5">
+                            <div class="col-md-12 col-lg-7">
+                                <div class="d-flex flex-column justify-content-start">
+                                    <h6 class="mb-2 nav-greeting mt-4">Hi, my name is</h6>
+                                    <h1 class="mb-2 text-white name">Lindsey Jimenez.</h1>
+                                    <h1 class="mb-3 title">I'm a Full Stack Developer.</h1>
+                                    <div class="d-flex flew-row mb-2">
+                                        <a class="btn btn-lg m-2" href="../images/LindseyJimenez.pdf" role="button"
+                                            rel="nofollow" target="_blank">View Resume</a>
+                                        <a class="nav-page btn btn-lg m-2" href="#portfolio" role="button">View
+                                            Projects</a>
+                                    </div>
+                                    <div
+                                        class="col-md-12 col-lg-6 contact-main d-flex flex-row justify-content-evenly mt-5">
+                                        <a class="info github nav-item" href="https://github.com/linnyelijim"
+                                            rel="nofollow" target="_blank" aria-label="linnyelijim">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a class="info linkedin nav-item"
+                                            href="https://www.linkedin.com/in/lindseyjimenez2510" rel="nofollow"
+                                            target="_blank" aria-label="lindseyjimenez2510">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                        <a class="info email nav-item" href="mailto:lindseyjimenez@gmail.com"
+                                            aria-label="lindseyjimenez@gmail.com">
+                                            <i class="far fa-envelope"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Background image -->
                 </div>
             </div>
-            <!-- Background image -->
-        </div>
-        </div>
     </header>
     <!--Main Navigation-->
     <!-- Left Side Nav -->
-    <div orientation="left" class="left-nav">
-        <ul class="left-nav-list">
-            <li><a href="#about" aria-label="About">About
-                    <title>About</title>
-                </a></li>
-            <li><a href="#skills" aria-label="Skills">Skills
-                    <title>Skills</title>
-                </a></li>
-            <li><a href="#portfolio" aria-label="Portfolio">Portfolio
-                    <title>Portfolio</title>
-                </a></li>
-            <li><a href="#contact" aria-label="Contact">Contact
-                    <title>Contact</title>
-                </a></li>
-            <li><a href="https://www.linkedin.com/in/lindseyjimenez2510" aria-label="Linkedin" target="_blank"
-                    rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-linkedin">
-                        <title>LinkedIn</title>
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                        </path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg></a></li>
-            <li><a href="https://github.com/linnyelijim" aria-label="GitHub" target="_blank" rel="noreferrer"><svg
-                        xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-github">
-                        <title>GitHub</title>
-                        <path
-                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                        </path>
+    <div class="container">
+        <div orientation="left" class="left-nav">
+            <ul class="left-nav-list">
+                <li><a href="#about" aria-label="About">About
+                        <title>About</title>
+                    </a></li>
+                <li><a href="#skills" aria-label="Skills">Skills
+                        <title>Skills</title>
+                    </a></li>
+                <li><a href="#portfolio" aria-label="Portfolio">Portfolio
+                        <title>Portfolio</title>
+                    </a></li>
+                <li><a href="#contact" aria-label="Contact">Contact
+                        <title>Contact</title>
+                    </a></li>
+                <li><a href="https://www.linkedin.com/in/lindseyjimenez2510" aria-label="Linkedin" target="_blank"
+                        rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-linkedin">
+                            <title>LinkedIn</title>
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a></li>
+                <li><a href="https://github.com/linnyelijim" aria-label="GitHub" target="_blank" rel="noreferrer"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <title>GitHub</title>
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
 
-                    </svg></a></li>
-        </ul>
-    </div>
-    <!-- Left Side Nav -->
-    <!-- Right Side Nav -->
-    <div orientation="right" class="right-nav">
-        <div class="right-nav-item fade-enter-done"><a
-                href="mailto:lindseyjimenez@gmail.com">lindseyjimenez@gmail.com</a></div>
+                        </svg></a></li>
+            </ul>
+        </div>
     </div>
     <!-- Right Side Nav -->
+    <div class="container">
+        <div orientation="right" class="right-nav">
+            <div class="right-nav-item fade-enter-done"><a
+                    href="mailto:lindseyjimenez@gmail.com">lindseyjimenez@gmail.com</a></div>
+        </div>
+    </div>
     <!--Main layout-->
-    <div id="content" class="container-fluid aos-init aos-animate">
+    <div id="content" class="container aos-init aos-animate mx-md-5">
         <main class="main-container main-count">
             <!--Section: About-->
-            <section id="about" class="about-container">
-                <h2 class="numbered-heading justify-content-center"><strong>About</strong></h2>
+            <section id="about" class="container my-3">
+                <h2 class="numbered-heading justify-content-center overline"><strong>About</strong></h2>
                 <div class="row justify-content-center">
-                    <div class="col">
-                        <div class="col-md-12">
-                            <div class="bg-image">
-                                <img src="../images/profile.jpg" class="img-fluid" alt="Headshot">
-                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                <!--<img src="../images/profile.jpg" class="img-fluid profile-thumb" alt="headshot" /> -->
-                            </div>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="bg-image img-fluid">
+                            <img src="../images/profile.jpg" class="img-fluid" alt="Headshot">
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="col-md-12 mt-5">
-                            <p class="text-muted">
-                                I'm a recent computer science graduate from Fort Hays State University. I'm
-                                thrilled to introduce myself as an aspiring computer scientist and tech enthusiast.
-                                My academic journey has equipped me with a solid foundation in computer science,
-                                including proficiency in programming languages like Python, JavaScript, CSS, HTML, and
-                                Java, as well as a keen understanding of algorithms and data structures. While I may not
-                                have hands-on industry experience yet, I'm deeply passionate about the possibilities
-                                that technology offers. My goal is to apply my academic knowledge to real-world
-                                challenges and explore innovative solutions in the ever-evolving tech landscape.
-                                <br><br>
-                                On this website, you'll find a showcase of my academic projects and the work I've
-                                undertaken during my studies, as well as a few independent projects. As I continue to
-                                grow and learn in this field, I'm excited to collaborate, contribute, and make my mark
-                                in the world of computer science. Please don't hesitate to connect with me on LinkedIn,
-                                explore my academic journey on GitHub, or reach out via email.
-                            </p>
-                        </div>
+                    <div class="col-md-12 col-lg-6 mt-4 mt-lg-0">
+                        <p class="text-muted">
+                            I'm a recent computer science graduate from Fort Hays State University. I'm
+                            thrilled to introduce myself as an aspiring computer scientist and tech enthusiast.
+                            My academic journey has equipped me with a solid foundation in computer science,
+                            including proficiency in programming languages like Python, JavaScript, CSS, HTML,
+                            and Java, as well as a keen understanding of algorithms and data structures. While I may
+                            not have hands-on industry experience yet, I'm deeply passionate about the possibilities
+                            that technology offers. My goal is to apply my academic knowledge to real-world
+                            challenges and explore innovative solutions in the ever-evolving tech landscape.
+                            <br><br>
+                            On this website, you'll find a showcase of my academic projects and the work I've
+                            undertaken during my studies, as well as a few independent projects. As I continue
+                            to grow and learn in this field, I'm excited to collaborate, contribute, and make my
+                            mark in the world of computer science. Please don't hesitate to connect with me on
+                            LinkedIn, explore my academic journey on GitHub, or reach out via email.
+                        </p>
                     </div>
                 </div>
             </section>
             <!--Section: About-->
             <!-- Section: Skills -->
-            <section id="skills" class="skills-container mt-5">
-                <h2 class="text-center mb-5 numbered-heading justify-content-center">Skills</h2>
-                <div class="skills row justify-content-center">
-                    <div class="skill-card col-md-6">
-                        <div class="card text-white bg card h-100 mb-4">
-                            <div class="card-header text-center bg-dark">Front-End</div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title"><i class="fab fa-html5 mr-2"></i>HTML5</h5>
-                                <h5 class="card-title"><i class="fab fa-css3-alt mr-2"></i>CSS3 | Bootstrap</h5>
-                                <h5 class="card-title"><i class="fab fa-react mr-2"></i>JavaScript | React</h5>
-                                <!-- <h5 class="card-title"><i class="fas fa-mobile-alt mr-2"></i>Dart | Flutter</h5> -->
+            <section id="skills" class="container my-3">
+                <h2 class="numbered-heading justify-content-center overline">Skills</h2>
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 mb-4">
+                        <div class="d-flex flex-column">
+                            <div class="skill-card">
+                                <div class="card text-white bg card h-100 mb-4 mx-4">
+                                    <div class="card-header text-center">Front-End</div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title"><i class="fab fa-html5 mr-2"></i>HTML5</h5>
+                                        <h5 class="card-title"><i class="fab fa-css3-alt mr-2"></i>CSS3 | Bootstrap
+                                        </h5>
+                                        <h5 class="card-title"><i class="fab fa-react mr-2"></i>JavaScript | React
+                                        </h5>
+                                        <!-- <h5 class="card-title"><i class="fas fa-mobile-alt mr-2"></i>Dart | Flutter</h5> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="card text-white bg card h-100 mb-4 mx-4">
+                                    <div class="card-header text-center">Back-End</div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title"><i class="fab fa-python mr-2"></i>Python | Django
+                                        </h5>
+                                        <h5 class="card-title"><i class="fab fa-node-js mr-2"></i>Node.js | Express
+                                        </h5>
+                                        <h5 class="card-title"><i class="fab fa-java mr-2"></i>Java</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="skill-card col-md-6">
-                        <div class="card text-white bg card h-100 mb-4">
-                            <div class="card-header text-center bg-dark">Back-End</div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title"><i class="fab fa-python mr-2"></i>Python | Django</h5>
-                                <h5 class="card-title"><i class="fab fa-node-js mr-2"></i>Node.js | Express</h5>
-                                <h5 class="card-title"><i class="fab fa-java mr-2"></i>Java</h5>
+                    <div class="col-md-12 col-lg-6 mb-4">
+                        <div class="d-flex flex-column">
+                            <div class="skill-card">
+                                <div class="card text-white bg card h-100 mb-4 mx-4">
+                                    <div class="card-header text-center">Databases | Deployment</div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title"><i class="fab fa-deskpro mr-2"></i>PostgreSQL | MySQL
+                                        </h5>
+                                        <h5 class="card-title"><i class="fas fa-database mr-2"></i>MongoDB | MariaDB
+                                        </h5>
+                                        <h5 class="card-title"><i class="fas fa-rocket mr-2"></i>Heroku | Netlify |
+                                            GitHub
+                                            Pages
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills row justify-content-center">
-                    <div class="skill-card col-md-6">
-                        <div class="card text-white bg card h-100 mb-4">
-                            <div class="card-header text-center bg-dark">Databases | Deployment</div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title"><i class="fab fa-deskpro mr-2"></i>PostgreSQL | MySQL</h5>
-                                <h5 class="card-title"><i class="fas fa-database mr-2"></i>MongoDB | MariaDB</h5>
-                                <h5 class="card-title"><i class="fas fa-rocket mr-2"></i>Heroku | Netlify | GitHub Pages
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-card col-md-6">
-                        <div class="card text-white bg card h-100 mb-4">
-                            <div class="card-header text-center bg-dark">Technologies</div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title"><i class="fab fa-github mr-2"></i>Git | GitHub</h5>
-                                <h5 class="card-title"><i class="fas fa-laptop-code mr-2"></i>VSCode</h5>
+                            <div class="skill-card">
+                                <div class="card text-white bg card h-100 mb-4 mx-4">
+                                    <div class="card-header text-center">Technologies</div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title"><i class="fab fa-github mr-2"></i>Git | GitHub</h5>
+                                        <h5 class="card-title"><i class="fas fa-laptop-code mr-2"></i>VSCode</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -235,7 +252,7 @@
             <!--Section: Skills-->
             <!--Section: Portfolio-->
             <section id="portfolio">
-                <h2 class="text-center mb-5 numbered-heading justify-content-center">Projects</h2>
+                <h2 class="mb-5 numbered-heading justify-content-center overline">Projects</h2>
                 <ul class="projects">
                     <li class="projects-li" data-sr-id="4"
                         style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;">
@@ -382,7 +399,8 @@
                                         </svg>
                                     </a>
                                     <a href="https://ljimenez2.infprojects.fhsu.edu/" aria-label="Course Link"
-                                        class="cta" rel="noopener noreferrer" target="_blank">More School Projects</a>
+                                        class="cta" rel="noopener noreferrer" target="_blank">More School
+                                        Projects</a>
                                 </div>
                             </div>
                         </div>
@@ -406,26 +424,29 @@
                 <p>Although I’m not currently looking for any new opportunities, my inbox is always open.
                     Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
                 <a class="email-link" href="mailto:lindseyjimenez@gmail.com" rel="noopener noreferrer"
-                    target="_blank">Say Hello</a>
+                    target="_blank">Say
+                    Hello</a>
             </section>
             <!--Section: Contact-->
-        </main>
-        <!--Main layout-->
 
+            <!--Main layout-->
+
+            <!--Footer-->
+            <section id="footer">
+                <footer class="page-footer text-large-start">
+                    <div class="footer-copyright text-center">
+                        ©
+                        <span id="copyright-year">2023</span>
+                        Copyright: Lindsey Jimenez
+                    </div>
+                </footer>
+            </section>
+        </main>
         <!--Footer-->
-        <footer class="text-lg-start footer">
-            <!-- Copyright -->
-            <div class="text-center p-3">
-                © 2023 Copyright: Lindsey Jimenez
-            </div>
-            <!-- Copyright -->
-        </footer>
-    </div>
-    <!--Footer-->
-    <!-- MDB -->
-    <script type="text/javascript" src="../js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="../js/script.js"></script>
+        <!-- MDB -->
+        <script type="text/javascript" src="../js/mdb.min.js"></script>
+        <!-- Custom scripts -->
+        <script type="text/javascript" src="../js/script.js"></script>
 </body>
 
 </html>
