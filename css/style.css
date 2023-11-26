@@ -55,7 +55,7 @@ ol li a:hover {
   font-variant: all-small-caps;
 }
 ul .social-item i {
-  color: rgb(168, 213, 3);
+  color: rgb(138, 177, 0);
 }
 
 /*Header*/
@@ -81,12 +81,13 @@ header .name {
   z-index: 3;
 }
 .info {
-  -webkit-text-stroke: 0.6px rgb(168, 213, 3);
+  -webkit-text-stroke: 1px rgb(138, 177, 0);
   -webkit-text-fill-color: black;
 }
 .nav-greeting {
-  -webkit-text-stroke: 0.5px rgb(168, 213, 3);
-  -webkit-text-fill-color: #000000;
+  /*   -webkit-text-stroke: 0.5px rgb(168, 213, 3);
+ */
+  -webkit-text-fill-color: rgb(138, 177, 0);
   font-family: monospace;
   font-weight: bolder;
   letter-spacing: 1px;
@@ -98,7 +99,7 @@ header .title {
   font-size: 3rem;
 }
 #intro .btn {
-  outline: 5px double rgb(168, 213, 3);
+  outline: 5px double rgb(138, 177, 0);
   font-family: "Roboto";
   background-color: rgba(0, 0, 0, 0.822);
   color: white;
@@ -106,13 +107,13 @@ header .title {
 #intro .btn:hover {
   background-color: rgb(20, 20, 20);
   color: #fff;
-  outline: 5px double rgb(140 103 74);
+  outline: 5px double rgb(209, 166, 102);
 }
 .info {
   font-size: xx-large;
 }
 .info i:hover {
-  color: rgb(140 103 74);
+  color: rgb(209, 166, 102);
 }
 
 /*Left Nav*/
@@ -209,7 +210,7 @@ main h4,
 main h6 {
   margin: 0px 0px 10px;
   font-weight: 300;
-  color: rgb(140 103 74);
+  color: rgb(138, 177, 0);
   line-height: 1.1;
   font-variant: all-petite-caps;
 }
@@ -220,7 +221,7 @@ main h6 {
   margin-bottom: 2rem;
   border-radius: 5%;
   box-shadow: rgb(0, 0, 0) 8px 8px 15px;
-  border: 6px double rgb(140 103 74);
+  border: 6px double rgb(92 118 2);
   overflow: hidden;
 }
 
@@ -291,7 +292,7 @@ svg {
   border-radius: 4px;
   background-color: rgb(149, 153, 136);
   color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 .projects-li:nth-last-of-type(2n + 1) .project-content {
   margin-right: -70px;
@@ -315,7 +316,7 @@ svg {
 .projects-li .project-tech-list li {
   margin: 0px 20px 5px 0px;
   color: rgb(42 53 0);
-  font-size: 17px;
+  font-size: 16px;
   white-space: nowrap;
 }
 .projects-li:nth-of-type(2n + 1) .project-links {
@@ -361,8 +362,6 @@ svg {
 }
 .projects-li .project-image {
   box-shadow: 0 5px 15px 3px rgb(0, 0, 0);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  grid-area: 1 / 6 / -1 / -1;
   position: relative;
   z-index: 1;
 }
@@ -385,6 +384,16 @@ svg {
   border-radius: 4px;
 }
 @media (max-width: 991px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.879), rgb(0 0 0 / 84%));
+  }
+  .navbar a {
+    font-size: 25px;
+  }
   .left-nav,
   .right-nav {
     display: none;
@@ -392,10 +401,22 @@ svg {
   body {
     font-size: 16px;
   }
-
+  section .container {
+    margin: 70px 5px !important;
+  }
+  .numbered-heading::before,
+  .numbered-heading::after {
+    display: none;
+  }
   #skills i,
   .card-title {
     font-size: 15px;
+  }
+  #about p {
+    margin: auto -30px !important;
+  }
+  .skill-card {
+    margin: auto -40px;
   }
   .project-image {
     display: none;
@@ -446,36 +467,41 @@ svg {
     font-size: 14px;
   }
 }
-.contact-me {
-  max-width: 600px;
+#contact {
+  max-width: 850px;
   text-align: center;
 }
-.overline::before {
+/* .overline::before {
   bottom: 0px;
   font-size: 14px;
   -webkit-text-stroke: green 0px;
   -webkit-text-fill-color: green;
-}
+} */
 .overline {
   margin-bottom: 50px;
   display: block;
   -webkit-text-stroke: rgb(42 53 0) 2px;
-  -webkit-text-fill-color: rgb(140 103 74 / 52%);
+  -webkit-text-fill-color: rgb(170 128 32);
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 50px;
   font-weight: 600;
   text-shadow: 6px 6px 2px rgb(149, 153, 136, 0.35);
 }
+.numbered-heading::before,
+.numbered-heading::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  background-color: #333;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .numbered-heading::before {
-  position: relative;
-  bottom: 0px;
-  counter-increment: section 1;
-  content: "0" counter(section) ".";
-  margin-right: 10px;
-  color: green;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  font-size: clamp(16px, 3vw, 22px);
-  font-weight: 600;
+  left: 20px;
+}
+.numbered-heading::after {
+  right: 20px;
 }
 .numbered-heading {
   display: flex;
@@ -484,21 +510,19 @@ svg {
   position: relative;
   white-space: nowrap;
 }
-.contact-me .title {
+#contact .title {
   font-size: clamp(40px, 5vw, 60px);
 }
-.contact-me .email-link {
-  color: green;
+#contact .email-link {
+  color: rgb(92 118 2);
   background-color: transparent;
-  border: 1px solid green;
-  border-radius: 4px;
-  padding: 1.25rem 1.75rem;
-  font-size: 14px;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  border: 5px double rgb(138 177 0);
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+  font-family: "Roboto";
   line-height: 1;
   text-decoration: none;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  margin-top: 50px;
+  font-weight: bolder;
 }
 #footer {
   display: flex;
@@ -508,7 +532,9 @@ svg {
   align-items: center;
   flex-direction: column;
   height: auto;
-  min-height: 70px;
+  min-height: 50px;
   padding: 15px;
   font-size: 12px;
+  font-weight: 500;
+  color: rgb(42 53 0);
 }
