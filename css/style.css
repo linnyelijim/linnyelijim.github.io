@@ -23,7 +23,6 @@ section,
 .btn:hover,
 .nav-item:hover {
   transform: scale(1.05);
-  color: white;
 }
 /* Navbar */
 .navbar {
@@ -113,7 +112,7 @@ header .title {
   font-size: xx-large;
 }
 .info i:hover {
-  color: rgb(209, 166, 102);
+  -webkit-text-stroke: 1px rgb(209, 166, 102);
 }
 
 /*Left Nav*/
@@ -241,12 +240,6 @@ main h6 {
   box-shadow: black 6px 6px 10px;
 }
 
-.project-title a {
-  color: rgb(140 103 74);
-  font-weight: bold;
-  font-size: 30px;
-}
-
 p:last-child,
 p:last-of-type {
   margin: 0px;
@@ -302,6 +295,8 @@ svg {
 }
 .projects-li .project-title a {
   color: rgb(42 53 0);
+  font-weight: bold;
+  font-size: 30px;
 }
 .projects-li .project-tech-list {
   display: flex;
@@ -340,6 +335,12 @@ svg {
   -webkit-box-align: center;
   align-items: center;
   padding: 10px;
+  color: rgb(42 53 0);
+}
+.projects-li .project-links a:hover {
+  color: rgb(255, 255, 255);
+}
+strong {
   color: rgb(42 53 0);
 }
 svg.feather {
